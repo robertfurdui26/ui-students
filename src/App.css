@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+body{
+  background-image: url('./images/BackgroundImage.jpg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #fff;
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -25,7 +34,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #0c0c0c;
 }
 
 @keyframes App-logo-spin {
