@@ -12,7 +12,7 @@ export const CourseItems = [
     },
     {
         courseTitle:" Delete Courses",
-        coursePath:'/courseDelete',
+        coursePath:'/delete',
         cCourseName:'dropdown-courseLink',
     },
     

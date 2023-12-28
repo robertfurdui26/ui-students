@@ -3,10 +3,7 @@
 }
 
 body{
-  background-image: url('./images/BackgroundImage.jpg');
-  background-position: center;
-  background-size:cover;
-  background-repeat: no-repeat;
+ background-color: #7C1034;
   color: #fff;
 
 }
