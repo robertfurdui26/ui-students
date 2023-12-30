@@ -27,24 +27,13 @@ const Courses = () => {
 
     return (
       
-        <table className="table ">
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-  {course.map((course) => (
-    <tr key={course.id}>
-      <th scope="row">{course.id}</th>
-      <td>{course.name}</td>
-      
-    </tr>
-  ))}
-    </tbody>
-        </table>
+        <div className="cards">
+      {course.map((course) => (
+        <div key={course.id} className="card">
+          <h5 className="card-title">{course.name}</h5>
+        </div>
+      ))}
+    </div>
     );
 };
 

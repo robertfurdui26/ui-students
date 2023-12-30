@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import axios from 'axios';
-import './CreateCourse.css';
 
 
 const UpdateCourse = () =>{
@@ -23,9 +22,9 @@ const UpdateCourse = () =>{
   };
     return(
         <div className="container mt-4">
-        <div className="card bg-dark text-white">
-          <div className="card-body">
-            <h1 className="card-title">Update a student</h1>
+        <div className="card-create bg-dark text-white">
+          <div className="card-body-create">
+            <h1 className="card-title-create">Update a student</h1>
             <div className="mb-3">
               <label htmlFor="id" className="form-label">Student Id:</label>
               <input

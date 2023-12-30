@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './CreateCourse.css';
 
+
 const CreateCourse = () =>{
 
     const [name,setName] = useState('');
@@ -23,9 +24,9 @@ const CreateCourse = () =>{
 
     return(
         <div className="container mt-5">
-    <div className="card bg-dark text-white">
-      <div className="card-body">
-        <h1 className="card-title">Create a Course</h1>
+    <div className="card-create bg-dark text-white">
+      <div className="card-body-create">
+        <h1 className="card-title-create">Create a Course</h1>
         <form>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">

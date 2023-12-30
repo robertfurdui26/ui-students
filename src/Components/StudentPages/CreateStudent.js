@@ -22,9 +22,9 @@ const CreateStudent = () => {
 
   return (
     <div className="container mt-5">
-    <div className="card bg-dark text-white">
-      <div className="card-body">
-        <h1 className="card-title">Create a Student</h1>
+    <div className="card-create bg-dark text-white">
+      <div className="card-body-create">
+        <h1 className="card-title-create">Create a Student</h1>
         <form>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">

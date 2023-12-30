@@ -27,6 +27,26 @@ const getAllStudents = async (studentGetDto) => {
 
 export { getAllStudents };
 
+const getAllTeacher = async (getTeacherDto) => {
+    try {
+        const response = await api.get('/api/Teacher/getTeacherInfo', {
+            params: getTeacherDto,
+        });
+        if (response.status === 200) {
+            console.log('Success! All Teachers');
+            return response.data;
+        } else {
+            console.error('Error at API');
+            throw new Error('Error');
+        }
+    } catch (error) {
+        console.error('Error API', error);
+        throw error;
+    }
+};
+
+export { getAllTeacher };
+
 const getAllGrade = async (getMarkDto) => {
     try {
         const response = await api.get('/api/Marks/marks', {
@@ -177,3 +197,20 @@ const deleteStudents = async() =>{
 }
 
 export {deleteStudents};
+
+const deleteCourse = async() =>{
+    try{
+        const response = await api.delete('api/Course/deleteCourse');
+        if(response.status === 200){
+            console.log('Course Student successfully!');
+            response.data;
+        }else{
+            console.error('Course not found');
+        }
+    }catch(error){
+        console.error('Error trying to comunicate');
+        throw error;
+    }
+}
+
+export {deleteCourse};

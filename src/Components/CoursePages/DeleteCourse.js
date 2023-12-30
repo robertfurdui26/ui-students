@@ -1,20 +1,21 @@
 import React,{useState} from 'react';
 import axios from 'axios';
+import './CreateCourse.css';
 
-const DeleteStudent = () =>{
+const DeleteCourse = () =>{
   const [id, setId] = useState('');
   const [deleted, setDeleted] = useState(false);
   const [error, setError] = useState('');
 
-  const handleDeleteStudent = async () => {
+  const handleDeleteCourse = async () => {
     try {
-      const response = await axios.delete(`https://localhost:7031/api/Student/delete?id=${id}`);
+      const response = await axios.delete(`https://localhost:7031/api/Course/deleteCourse?id=${id}`);
       console.log(response.data); 
       setDeleted(true);
       setError('');
     } catch (error) {
-      console.error('Error deleting student:', error);
-      setError('Error deleting student. Please check the ID and try again.');
+      console.error('Error deleting Course:', error);
+      setError('Error deleting Course. Please check the ID and try again.');
       setDeleted(false);
     }
   };
@@ -26,9 +27,9 @@ const DeleteStudent = () =>{
         <div className="container mt-4">
       <div className="card-create bg-dark text-white">
         <div className="card-body-create">
-          <h1 className="card-title-create">Delete a student</h1>
+          <h1 className="card-title-create">Delete a Course</h1>
           <div className="mb-3">
-            <label htmlFor="id" className="form-label">Student ID:</label>
+            <label htmlFor="id" className="form-label">Course ID:</label>
             <input
               type="number"
               className="form-control"
@@ -37,12 +38,12 @@ const DeleteStudent = () =>{
               onChange={(e) => setId(e.target.value)}
             />
           </div>
-          <button onClick={handleDeleteStudent} className="btn btn-black">Delete Student</button>
+          <button onClick={handleDeleteCourse} className="btn btn-black">Delete Course</button>
 
           {deleted && (
             <div>
-              <h2>Student Deleted</h2>
-              <p>Student with ID {id} has been successfully deleted.</p>
+              <h2>Course Deleted</h2>
+              <p>Course with ID {id} has been successfully deleted.</p>
             </div>
           )}
 
@@ -58,4 +59,4 @@ const DeleteStudent = () =>{
     );
 };
 
-export default DeleteStudent;
+export default DeleteCourse;

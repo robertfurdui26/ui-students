@@ -11,6 +11,9 @@ import CreateCourse from './Components/CoursePages/CreateCourse';
 import AddGrade from './Components/StudentPages/AddGrade';
 import ShowStudentsGrades from './Components/StudentPages/ShowStudentsGrade';
 import UpdateCourse from './Components/CoursePages/UpdateCourse';
+import DeleteCourse from './Components/CoursePages/DeleteCourse';
+import TeacherList from './Components/TeacherPages/TeacherList';
+import ContactUs from './Components/ContactUs';
 
 
 
@@ -31,6 +34,12 @@ function App(){
         <Route path='/addGrade' element = {<AddGrade />} />
         <Route path='/showGrade' element = {<ShowStudentsGrades />} />
         <Route path='/courseUpdate' element = {<UpdateCourse />} />
+        <Route path='/deleteCourses' element = {<DeleteCourse />} />
+        <Route path='/teacher' element = {<TeacherList />} />
+        <Route path='/contact-us' element = {<ContactUs />} />
+
+
+
 
 
 

@@ -27,9 +27,9 @@ const AddGrade =() =>{
 
     return(
         <div className="container mt-5">
-    <div className="card bg-dark text-white">
-      <div className="card-body">
-        <h1 className="card-title">Add Grade Student</h1>
+    <div className="card-create bg-dark text-white">
+      <div className="card-body-create">
+        <h1 className="card-title-create">Add Grade Student</h1>
         <form>
           <div className="mb-3">
             <label htmlFor="studentId" className="form-label">
