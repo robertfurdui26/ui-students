@@ -50,7 +50,7 @@
   .nav-links:hover {
     background-color: #575859;
     border-radius: 4px;
-    transition: all 0.2s ease-out;
+    transition: all 1 ease-out;
   }
   
   .fa-bars {

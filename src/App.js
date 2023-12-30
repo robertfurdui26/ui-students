@@ -14,6 +14,7 @@ import UpdateCourse from './Components/CoursePages/UpdateCourse';
 import DeleteCourse from './Components/CoursePages/DeleteCourse';
 import TeacherList from './Components/TeacherPages/TeacherList';
 import ContactUs from './Components/ContactUs';
+import Home from './Components/Home';
 
 
 
@@ -37,6 +38,8 @@ function App(){
         <Route path='/deleteCourses' element = {<DeleteCourse />} />
         <Route path='/teacher' element = {<TeacherList />} />
         <Route path='/contact-us' element = {<ContactUs />} />
+        <Route path='/home' element = {<Home />} />
+
 
 
 

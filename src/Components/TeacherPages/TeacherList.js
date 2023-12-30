@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import './Teacher.css';
 
 
 const TeacherList = () => {
@@ -26,29 +27,22 @@ const TeacherList = () => {
 
     return (
       
-        <table className="table ">
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Description</th>
+        <div className="cards">
+        {teachers.map((teacher) => (
+          <div key={teacher.id} className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <h5 className="card-title-teacher">{teacher.name}</h5>
+                <h5 className="card-title-teacher">Age: {teacher.age}</h5>
 
-                </tr>
-            </thead>
-            <tbody>
-  {teachers.map((teacher) => (
-    <tr key={teacher.id}>
-      <th scope="row">{teacher.id}</th>
-      <td>{teacher.name}</td>
-      <td>{teacher.age}</td>
-      <td>{teacher.description}</td>
-
-      
-    </tr>
-  ))}
-    </tbody>
-        </table>
+              </div>
+              <div className="flip-card-back">
+                <h5 className="name">{teacher.description}</h5>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     );
 };
 

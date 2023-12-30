@@ -43,18 +43,14 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+        <Link to='/home' className='navbar-logo' onClick={closeMobileMenu}>
           StudentCatalog <i className='fab fa-firstdraft' />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
-            <Link to='/altceva' className='nav-links' onClick={closeMobileMenu}>
-              All Students
-            </Link>
-          </li>
+         
           <li
             className='nav-item'
             onMouseEnter={onMouseEnterServices}
