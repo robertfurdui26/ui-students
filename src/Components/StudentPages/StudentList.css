@@ -2,23 +2,23 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    color: black;
+    color: white;
   }
   
   .table th,
   .table td {
     padding: 12px;
     text-align: left;
-    border: 1px solid #040303;
+    border: 1px solid gray;
     border-width: 2px;
   }
   
   .table th {
-    background-color: #9a9595;
+    background-color: black;
   }
 
   .table td{
-    background-color: rgb(255, 255, 255);
+    background-color:black;
   }
   
   
