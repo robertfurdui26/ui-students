@@ -44,7 +44,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/home' className='navbar-logo' onClick={closeMobileMenu}>
-          StudentCatalog <i className='fab fa-firstdraft' />
+          Student Catalog <i className='fab fa-firstdraft' />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
