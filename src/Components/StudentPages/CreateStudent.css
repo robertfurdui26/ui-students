@@ -9,7 +9,7 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgb(0, 0, 0);
-  background-color: #0b0a0a; /* Light gray background color */
+  background-color: #0b0a0a; 
 }
 
 .card-body-create {
@@ -27,7 +27,7 @@
 
 .form-label {
   color: #f9f9f9;
-  margin-left: -15px; /* Dark gray label color for better contrast */
+  margin-left: -15px; 
 }
 
 .form-control {
@@ -35,9 +35,9 @@
   padding: 15px;
   margin-bottom: 20px;
   margin-left: -15px;
-  border: 1px solid #ced4da; /* Slightly lighter border color */
+  border: 1px solid #ced4da; 
   border-radius: 8px;
-  background-color: #e9ecef; /* Lighter gray background color */
+  background-color: #e9ecef; 
   color: #495057;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .btn-black:hover {
-  background-color: #343a40; /* Darker color on hover for visual feedback */
+  background-color: #343a40; 
 }
 
 .bg-primary {

@@ -19,10 +19,7 @@ const DeleteCourse = () =>{
       setDeleted(false);
     }
   };
-
-
-
-
+  
     return(
         <div className="container mt-4">
       <div className="card-create bg-dark text-white">

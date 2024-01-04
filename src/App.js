@@ -39,19 +39,6 @@ function App(){
         <Route path='/teacher' element = {<TeacherList />} />
         <Route path='/contact-us' element = {<ContactUs />} />
         <Route path='/home' element = {<Home />} />
-
-
-
-
-
-
-
-
-
-
-
-
-
       </Routes>
     </Router>
   )
